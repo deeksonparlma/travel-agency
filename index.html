@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
   <head>
-    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
     <title>Happy Travel Agency</title>
   </head>
   <body>
-    <div id="topnav">
+    <div id="container">
       <nav id="navbar">
         <ul>
           <li><a href="#topnav">Home</a></li>
@@ -15,10 +17,65 @@
       </nav>
       <center>
         <h4>Happy Travel Agencies</h4>
-        <button>Travel with us</button>
+        <button class="btn btn-info" id="offset">Travel with us</button>
+        <br>
+        <br>
+      <div id="form">
+        <div class="form-group">
+          <form action="mailto:dicksonparlma@gmail.com" method="post" id="query">
+            <label for="email">Email</label>
+            <input type="email" id="email" class="form-control" name="" value="">
+            <label for="name">Name</label>
+            <input type="text" id="name" class="form-control" name="name" value="">
+            <label for="name">Destination</label>
+            <select id="where" class="form-control" name="">
+              <option>-select destination-</option>
+              <option value="Madagascar">Madagascar</option>
+              <option value="Mauritius">Mauritius</option>
+              <option value="Dubai">Dubai</option>
+              <option value="Mombasa">Mombasa</option>
+              <option value="Egypt">Egypt</option>
+            </select>
+            <label for="Date">Date</label>
+            <input type="date" id="when"name="" class="form-control" value=""><br>
+            <button type="submit" class="btn btn-success" name="button">Travel</button> <button type="reset"class="btn btn-danger" id="reset" name="button">Reset</button> <img src="https://cdn2.iconfinder.com/data/icons/color-svg-vector-icons-part-2/512/wrong_table_no_navigator_formula-512.png" id="ccc" alt=""> <br><br>
+            <div id="response"></div>
+          </form>
+        </div>
+      </div>
       </center>
-
+    <div id="cnt">
+      <div class="container">
+        <div class="panel panel-info">
+          <div class="panel-heading">
+            <h6><p class="text-info"><img class="image-responsive" id="cc" src="http://cdn.onlinewebfonts.com/svg/img_456356.png" alt="">Great Discounts</p></h6>
+          </div>
+          <div class="panel-body">
+            <p class="cont">50% off trips outside East Africa</p>
+          </div>
+            <div class="panel-heading">
+              <h6><p class="text-info"><img src="http://www.kacys.com.au/wp-content/uploads/2018/02/comfort-icon.png" id="cc" alt="">Comfort is guaranteed</p></h6>
+            </div>
+            <div class="panel-body">
+              <p class="cont">50% off trips outside East Africa</p>
+            </div>
+            <div class="panel-heading">
+              <p class="text-info"><img src="https://png.pngtree.com/svg/20160310/money_1043385.png" id="cc" alt="">Affordable</p>
+            </div>
+              <div class="panel-body">
+                <p>Get tailor made prices while travelling with us.Pay at your own rate in a given time frame.</p>
+              </div>
+          </div>
+          <div class="panel-footer">
+            <p class="text-info">safe travel</p>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 
+  <script   src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <script type="text/javascript" src="js/scripts.js">
+  </script>
   </body>
 </html>
